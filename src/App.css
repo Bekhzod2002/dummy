@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  background-color: white;
+}
+
+.navbarWholeContainer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navbarInsideContainer {
+  width: 70%;
+}
+
+.logoContainer {
+  margin-right: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.cardPriceContainer {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.priceHolder, 
+.ratingHolder {
+  font-weight: bold;
+}
+
+.lowAvailbility {
+  color: #7C0902 !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.mediumAvailbility {
+  color: #E25822 !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.goodAvailbility {
+  color: #FF8C00 !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.greatAvailbility {
+  color: #568203 !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.devMenu {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important; 
+}
+
+.limitSelectorContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.productLimitSelectorContainer {
+  width: 200px;  
+}
+
+.sortContainer {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarInsideContainer {
+    width: 100%;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 50vw;
+    object-fit: contain;
+    padding: 20px;
+  }
+
+
+  .limitSelectorContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sortContainer {
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+
+}
+
+
+.app {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
